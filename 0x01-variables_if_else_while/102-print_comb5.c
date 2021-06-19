@@ -26,7 +26,7 @@ putchar(l);
 putchar(' ');
 putchar(m);
 putchar(n);
-if !(k == '9' && l == '9')
+ if (!(k == '9' && l == '9'))
 {
 putchar(',');
 putchar(' ');
