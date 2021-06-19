@@ -19,20 +19,17 @@ for (m = '0'; m <= '9'; m++)
 {
 for (n = '0'; n <= '9'; n++)
 {
-while (k >= m && l > n)
+if (k >= m && n > l)
 {
 putchar(k);
 putchar(l);
 putchar(' ');
 putchar(m);
 putchar(n);
-if (k <= '9')
-{
-while (l <= 8)
+if !(k == '9' && l == '9')
 {
 putchar(',');
 putchar(' ');
-}
 }
 }
 }
