@@ -1,13 +1,11 @@
-#include <stdio.h>
+#include <holberton.h>
 /**
- * print_alphabet -  prints the alphabet, in lowercase
+ * main - first function to execute when run program
+ * print alphabet lower case
  * Return: 0
  */
-void print_alphabet(void)
+int main(void)
 {
-char n;
-
-for (n = 'a' ; n <= 'z' ; n++)
-putchar(n);
-putchar('\n');
+  print_alphabet();
+  return (0);
 }
