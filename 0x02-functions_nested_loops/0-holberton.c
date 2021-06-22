@@ -1,11 +1,19 @@
 #include <holberton.h>
 /**
  * main - first function to execute when run program
- * print alphabet lower case
+ * prints "Holberton"
  * Return: 0
  */
 int main(void)
 {
-  print_alphabet();
+  char holberton[] = "Holberton";
+  int i = 0;
+
+  while (holberton[i] != '\0')
+    {
+      putchar(holberton[i]);
+      i++;
+    }
+  putchar('\n');
   return (0);
 }
