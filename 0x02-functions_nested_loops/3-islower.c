@@ -1,4 +1,5 @@
 #include "holberton.h"
+#include <ctype.h>
 /**
  * _islower - first function
  * @c: char type letter
