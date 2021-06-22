@@ -1,7 +1,6 @@
 #include "holberton.h"
 /**
- * main - first function to execute when run program
- * print alphabet lower case
+ * print_alphabet - first function
  * Return: 0
  */
 void print_alphabet(void)
