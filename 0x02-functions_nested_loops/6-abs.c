@@ -12,5 +12,4 @@ int a;
 
 a = abs(n);
 _putchar(a);
-_putchar('\n');
 }
