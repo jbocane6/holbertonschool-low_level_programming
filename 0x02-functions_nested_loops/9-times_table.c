@@ -14,7 +14,7 @@ for (base = 0; base <= 9; base++)
 for (mult = 0; mult <= 9; mult++)
 {
 prod = base * mult;
-if (prod <= 9)
+if (prod <= 9 && mult >0)
 _putchar(' ');
 if (prod <= 9)
 _putchar(prod + '0');
