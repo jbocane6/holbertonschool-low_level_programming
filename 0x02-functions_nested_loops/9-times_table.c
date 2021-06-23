@@ -19,8 +19,9 @@ _putchar(prod + '0');
 else
 {
 _putchar(prod / 10 + '0');
+_putchar(prod % 10 + '0'); 
 }
-if (base < 9)
+if (mult < 9)
 {
 _putchar(',');
 _putchar(' ');
