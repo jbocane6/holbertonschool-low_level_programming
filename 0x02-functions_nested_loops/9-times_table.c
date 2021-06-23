@@ -24,7 +24,9 @@ _putchar(prod % 10 + '0');
 if (mult < 9)
 {
 _putchar(',');
-_putchar('\t');
+_putchar(' ');
+if (prod <= 9)
+_putchar(' ');   
 }
 else
 _putchar('\n');
