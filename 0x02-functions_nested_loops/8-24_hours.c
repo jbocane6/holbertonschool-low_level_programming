@@ -16,14 +16,14 @@ for (min = 0; min <= 59; min++)
 {
 bur = hor / 10;
 buja = hor % 10;
-putchar(bur + '0');
-putchar(buja + '0');
-putchar(':');
+_putchar(bur + '0');
+_putchar(buja + '0');
+_putchar(':');
 bur = min / 10;
 buja = min % 10;
-putchar(bur + '0');
-putchar(buja + '0');
-putchar('\n');
+_putchar(bur + '0');
+_putchar(buja + '0');
+_putchar('\n');
 }
 }
 }
