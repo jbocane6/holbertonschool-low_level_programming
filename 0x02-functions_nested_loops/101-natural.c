@@ -16,12 +16,12 @@ int main(void)
 		if (((i % 3) == 0) || ((i % 5) == 0))
 			suma = suma + i;
 	}
-	printf((suma / 100000));
-	printf((suma / 10000) % 10);
-	printf((suma / 1000) % 10);
-	printf((suma / 100) % 10);
-	printf((suma / 10) % 10);
-	printf(suma % 10);
-	printf('\n');
+	printf("%i", (suma / 100000));
+	printf("%i", (suma / 10000) % 10);
+	printf("%i", (suma / 1000) % 10);
+	printf("%i", (suma / 100) % 10);
+	printf("%i", (suma / 10) % 10);
+	printf("%i", suma % 10);
+	printf("\n");
 	return (0);
 }
