@@ -23,7 +23,7 @@ int main(void)
 		n2 = n2 + n1;
 		n1 = burbuja;
 		printf("%lu", n2);
-		if (con != 98)
+		if (con != 97)
 		{
 			printf(", ");
 		}
