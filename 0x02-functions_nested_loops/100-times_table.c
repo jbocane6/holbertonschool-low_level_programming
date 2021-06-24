@@ -4,8 +4,9 @@
  * imprimir - prints in screen
  * @prod: int value number
  * @mult: int value number
+ * @n: int value number
  */
-void imprimir(int prod, int mult)
+void imprimir(int prod, int mult, int n)
 {
 	if ((n * n) <= 99)
 	{
@@ -66,7 +67,7 @@ void print_times_table(int n)
 			for (mult = 0; mult <= n; mult++)
 			{
 				prod = base * mult;
-				imprimir(prod, mult);
+				imprimir(prod, mult, n);
 			}
 		}
 	}
