@@ -2,7 +2,7 @@
 #include "holberton.h"
 
 /**
- * print_square - function that prints a square, followed by a new line
+ * main - function that prints a square, followed by a new line
  * Return: 0;
  */
 
