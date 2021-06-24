@@ -19,14 +19,16 @@ void print_number(int n)
 			_putchar('-');
 			n = n * -1;
 		}
-		int len = ceil(log10(n));
 		int cont, cont2;
 		int i = 1;
+		int len = 1;
 
-		for (cont2 = 2; cont2 <= len; cont2++)
+		while (n / (i * 10) > 0)
 		{
 			i = i * 10;
+			len++;
 		}
+
 		for (cont2 = 2; cont2 <= len; cont2++)
 		{
 			_putchar((n / i) + '0');
