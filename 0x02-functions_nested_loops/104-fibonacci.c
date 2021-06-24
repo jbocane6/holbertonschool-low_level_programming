@@ -1,4 +1,5 @@
 #include "stdio.h"
+#include "float.h"
 
 /**
  * main - main function
@@ -11,9 +12,9 @@ int main(void)
 	long n1 = 1;
 	long n2 = 2;
 	long burbuja;
-	Double d1 = 0;
-	Double d2 = 0;
-	Double burbuja2 = 0;
+	float d1 = 0;
+	float d2 = 0;
+	float burbuja2 = 0;
 	long con;
 
 	printf("%ld", n1);
