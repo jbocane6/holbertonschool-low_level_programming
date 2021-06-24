@@ -12,9 +12,9 @@ int main(void)
 	long n1 = 1;
 	long n2 = 2;
 	long burbuja;
-	float d1 = 0;
-	float d2 = 0;
-	float burbuja2 = 0;
+	double d1;
+	double d2;
+	double burbuja2;
 	long con;
 
 	printf("%ld", n1);
@@ -31,8 +31,8 @@ int main(void)
 	}
 	for (con = 91; con <= 98; con++)
 	{
-		burbuja2 = n2;
-		d2 = n2 + n1;
+		burbuja2 = (float)n2;
+		d2 = (float)n2 + (float)n1;
 		d1 = burbuja2;
 		printf("%.0f", d2);
 		if (con != 98)
