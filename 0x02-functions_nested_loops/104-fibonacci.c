@@ -1,6 +1,4 @@
 #include "stdio.h"
-#include "float.h"
-#include "math.h"
 
 /**
  * main - main function
@@ -15,16 +13,16 @@ int main(void)
 	float burbuja;
 	float con;
 
-	printf("%.0f", n1);
+	printf("%f", n1);
 	printf(", ");
-	printf("%.0f", n2);
+	printf("%f", n2);
 	printf(", ");
 	for (con = 3; con <= 98; con++)
 	{
-		burbuja = ceil(n2);
-		n2 = ceil(n2) + ceil(n1);
-		n1 = ceil(burbuja);
-		printf("%.0f", n2);
+		burbuja = n2;
+		n2 = n2 + n1;
+		n1 = burbuja;
+		printf("%f", n2);
 		if (con != 98)
 		{
 			printf(", ");
@@ -33,4 +31,3 @@ int main(void)
 	printf("\n");
 	return (0);
 }
-
