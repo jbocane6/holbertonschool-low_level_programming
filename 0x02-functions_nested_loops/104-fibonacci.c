@@ -1,5 +1,4 @@
 #include "stdio.h"
-#include "float.h"
 
 /**
  * main - main function
@@ -9,32 +8,19 @@
 
 int main(void)
 {
-	long n1 = 1;
-	long n2 = 2;
-	long burbuja;
-	double d1;
-	double d2;
-	double burbuja2;
-	long con;
+	unsigned long int n1 = 1;
+	unsigned long int n2 = 2;
+	unsigned long int burbuja;
+	unsigned long int con;
 
-	printf("%ld", n1);
-	printf(", ");
-	printf("%ld", n2);
-	printf(", ");
-	for (con = 3; con <= 90; con++)
+	printf("%lu", n1);
+	printf("%lu", n2);
+	for (con = 3; con <= 98; con++)
 	{
 		burbuja = n2;
 		n2 = n2 + n1;
 		n1 = burbuja;
-		printf("%ld", n2);
-		printf(", ");
-	}
-	for (con = 91; con <= 98; con++)
-	{
-		burbuja2 = (float)n2;
-		d2 = (float)n2 + (float)n1;
-		d1 = burbuja2;
-		printf("%.0f", d2);
+		printf("%lu", n2);
 		if (con != 98)
 		{
 			printf(", ");
@@ -43,3 +29,4 @@ int main(void)
 	printf("\n");
 	return (0);
 }
+
