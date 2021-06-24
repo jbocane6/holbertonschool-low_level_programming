@@ -1,21 +1,32 @@
-#include <stdio.h>
+#include "holberton.h"
+
 /**
- * main - first function
+ * main - main function
+ *
  * Return: 0
  */
+
 int main(void)
 {
-int n;
-long f = 1;
-printf("%ld, ", f);
-long g = f + 1;
-long comodin;
-for (n = 1; n <= 49; n++)
-{
-printf("%ld, ", g);
-comodin = g;
-g = f + g;
-f = comodin;
-}
-return (0);
+	long n1 = 1;
+	long n2 = 2;
+	long cont;
+	long burbuja;
+
+	printf("%li", n1);
+	printf(", ");
+	printf("%li", n2);
+	printf(", ");
+	for (cont = 3; cont <= 50; cont++)
+	{
+		burbuja = n2;
+		n2 = n1 + n2;
+		printf("%li", n2);
+		n1 = burbuja;
+		if (cont != 50)
+		{
+			printf(", ");
+		}
+	}
+	printf("\n");
 }
