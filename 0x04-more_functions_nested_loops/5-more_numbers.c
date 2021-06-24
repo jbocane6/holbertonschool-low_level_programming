@@ -18,8 +18,6 @@ void more_numbers(void)
 				_putchar((con2 / 10) + '0');
 			_putchar((con2 % 10) + '0');
 		}
-		if (con < 9)
-			_putchar('\n');
+		_putchar('\n');
 	}
-	_putchar('\n');
 }
