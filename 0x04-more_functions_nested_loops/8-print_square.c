@@ -12,15 +12,15 @@ void print_square(int size)
 	int con;
 	int con2;
 
-	if (n > 0)
+	if (size > 0)
 	{
-		for (con = 0; con < n; con++)
+		for (con = 0; con < size; con++)
 		{
-			for (con2 = 0; con2 < n; con2++)
+			for (con2 = 0; con2 < size; con2++)
 			{
 				_putchar('#');
 			}
-			if (con == n - 1)
+			if (con == size - 1)
 				_putchar('\n');
 		}
 	}
