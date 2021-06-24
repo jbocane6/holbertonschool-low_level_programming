@@ -24,7 +24,6 @@ int main(void)
 		{
 			burbuja = n2;
 			n2 = n1 + n2;
-			printf("%li", n2);
 			n1 = burbuja;
 		}
 	}
