@@ -11,13 +11,13 @@ void imprimir(int prod, int mult, int n)
 	if ((n * n) <= 99)
 	{
 		if (prod <= 9 && mult > 0)
-			_putchar(' ');
+			_putchar('  ');
 	}
 	else
 	{
 		if (prod <= 9 && mult > 0)
 			_putchar(' ');
-		_putchar(' ');
+		_putchar('  ');
 		if (prod <= 99)
 			_putchar(' ');
 	}
