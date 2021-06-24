@@ -1,5 +1,6 @@
 #include "stdio.h"
 #include "float.h"
+#include <math.h>
 
 /**
  * main - main function
@@ -20,9 +21,9 @@ int main(void)
 	printf(", ");
 	for (con = 3; con <= 98; con++)
 	{
-		burbuja = n2;
-		n2 = n2 + n1;
-		n1 = burbuja;
+		burbuja = ceil(n2);
+		n2 = ceil(n2) + ceil(n1);
+		n1 = ceil(burbuja);
 		printf("%.0f", n2);
 		if (con != 98)
 		{
