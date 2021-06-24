@@ -20,18 +20,14 @@ int main(void)
 	printf(", ");
 	for (cont = 5; cont <= 35; cont++)
 	{
-		if ((cont % 2 == 0) && n1 + n2 <= 4000000)
+		if ((cont % 2 == 0) && n2 <= 4000000)
 		{
 			burbuja = n2;
 			n2 = n1 + n2;
 			printf("%li", n2);
 			n1 = burbuja;
-			if (n1 + n2 < 4000000)
-			{
-				printf(", ");
-			}
 		}
 	}
-	printf("\n");
+	printf("%li\n", n2);
 	return (0);
 }
