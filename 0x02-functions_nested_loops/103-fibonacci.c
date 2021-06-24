@@ -14,11 +14,7 @@ int main(void)
 	long cont;
 	long burbuja;
 
-	printf("%li", n1);
-	printf(", ");
-	printf("%li", n2);
-	printf(", ");
-	for (cont = 5; cont <= 35; cont++)
+	for (cont = 5; cont <= 65; cont++)
 	{
 		if ((cont % 2 == 0) && n2 <= 4000000)
 		{
