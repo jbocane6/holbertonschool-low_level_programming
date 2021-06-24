@@ -9,20 +9,22 @@
 
 int main(void)
 {
-	long n1 = 2;
-	long n2 = 4;
-	long cont;
-	long burbuja;
+	int cont;
+	long n1 = 0;
+	long n2 = 0;
+	long suma = 1;
+	long burbuja = 0;
 
-	for (cont = 5; cont <= 65; cont++)
+	for (cont = 1; cont <= 65; cont++)
 	{
-		if ((cont % 2 == 0) && n2 <= 4000000)
+		n2 = suma + n1;
+		if ((n2 % 2) == 0 && n1 < 4000000)
 		{
-			burbuja = n2;
-			n2 = n1 + n2;
-			n1 = burbuja;
+			burbuja = burbuja + n2;
 		}
+		n1 = suma;
+		suma = n2;
 	}
-	printf("%li\n", n2);
+	printf("%ld\n", burbuja);
 	return (0);
 }
