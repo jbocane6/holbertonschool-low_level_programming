@@ -22,9 +22,9 @@ void print_triangle(int size)
 				else
 					putchar(' ');
 			}
-			putchar('\n');
+			if (con != 1)
+				putchar('\n');
 		}
 	}
-
 	putchar('\n');
 }
