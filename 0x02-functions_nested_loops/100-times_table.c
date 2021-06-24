@@ -1,74 +1,65 @@
-#include "holberton.h"
+include "holberton.h"
 
 /**
- * imprimir - prints in screen
- * @prod: int value number
- * @mult: int value number
- * @n: int value number
+ * imprimir - prints comma, spaces and the number
+ * @n: input value number
  */
-void imprimir(int prod, int mult, int n)
+
+void imprimir(int n)
 {
-	if ((n * n) <= 99)
-	{
-		if (prod <= 9 && mult > 0)
-			_putchar('  ');
-	}
-	else
-	{
-		if (prod <= 9 && mult > 0)
-			_putchar(' ');
-		_putchar('  ');
-		if (prod <= 99)
-			_putchar(' ');
-	}
-	if (prod <= 9)
-		_putchar(prod + '0');
-	else
-	{
-		if (prod >= 100)
-		{
-			_putchar(prod / 100 + '0');
-			if ((prod - 100) >= 10)
-				_putchar((prod - 100) / 10 + '0');
-			else
-				_putchar(0 + '0');
-			_putchar((prod - 100) % 10 + '0');
-		}
-		else
-		{
-			_putchar(prod / 10 + '0');
-			_putchar(prod % 10 + '0');
-		}
-	}
-	if (mult < n)
+	if (n <= 9)
 	{
 		_putchar(',');
 		_putchar(' ');
-	}
-	else
-		_putchar('\n');
-}
+		_putchar(' ');
+		_putchar(' ');
+		_putchar(n + '0');
 
+	}
+	else if (n >= 9 && n < 100)
+	{
+		_putchar(',');
+		_putchar(' ');
+		_putchar(' ');
+		_putchar(n / 10 + '0');
+		_putchar(n % 10 + '0');
+	}
+	else if (n >= 99 && n < 1000)
+	{
+		_putchar(',');
+		_putchar(' ');
+		_putchar(n / 100 + '0');
+		_putchar((n / 10) % 10 + '0');
+		_putchar(n % 10 + '0');
+	}
+}
 /**
- * print_times_table - first function
- * @n: int value number
- * Return: 0
+ * print_times_table - main function
+ * @n: input value number
+ *
  */
+
 void print_times_table(int n)
 {
-	int mult;
 	int base;
+	int mult;
 	int prod;
 
-	if (n <= 15 || n > 0)
+	if (n >= 0 && n <= 15)
 	{
 		for (base = 0; base <= n; base++)
 		{
-			for (mult = 0; mult <= n; mult++)
+			mult = 1;
+			_putchar('0');
+			for (mult = 1; mult <= n; mult++)
 			{
 				prod = base * mult;
-				imprimir(prod, mult, n);
+				imprimir(prod);
+				if (mult == n)
+					_putchar('\n');
 			}
+			if (n == 0)
+				_putchar('\n');
 		}
 	}
 }
