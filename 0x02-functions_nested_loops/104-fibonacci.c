@@ -11,9 +11,9 @@ int main(void)
 	long n1 = 1;
 	long n2 = 2;
 	long burbuja;
-	double d1 = 0;
-	double d2 = 0;
-	double burbuja2 = 0;
+	Double d1 = 0;
+	Double d2 = 0;
+	Double burbuja2 = 0;
 	long con;
 
 	printf("%ld", n1);
