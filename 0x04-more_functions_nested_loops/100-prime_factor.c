@@ -7,7 +7,6 @@
  * 612852475143
  * Return: 0
  */
-
 int main(void)
 {
 	float limit = 612852475143;
