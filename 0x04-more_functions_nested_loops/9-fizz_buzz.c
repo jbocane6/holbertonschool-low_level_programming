@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * main - main function
+ * Main - main function
  * Description: program that prints the numbers from 1 to 100
  * Return: 0
  */
