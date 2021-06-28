@@ -1,21 +1,42 @@
-#include <stdio.h>
+#include "stdio.h"
+#include "math.h"
 
 /**
- * main - main function
- * Description: program that prints the numbers from 1 to 100,
- * followed by a new line
- * But for multiples of three print Fizz instead of
- * the number and for the multiples of five print Buzz, or numbers
- * which are multiples of both three and five print FizzBuzz
+ * main -  function that prints an integer
+ *
  * Return: 0
  */
 
-int main(void)
+void main(void)
 {
-    int n = 98;
-    int *p = &n;
+	int n = -9863541;
 
-    printf("%d", n);
+	if (n == 0)
+		putchar(n + '0');
+	else
+	{
+		if (n < 0)
+		{
+			putchar('-');
+			n = n * -1;
+		}
+		int cont, cont2;
+		int i = 1;
+		int len = 1;
 
-    return (0);
+		while (n / (i * 10) > 0)
+		{
+			i = i * 10;
+			len++;
+		}
+
+		for (cont2 = 2; cont2 <= len; cont2++)
+		{
+			putchar((n / i) + '0');
+			n = n % i;
+			i = i / 10;
+		}
+		putchar(n + '0');
+	}
+	putchar('\n');
 }
