@@ -12,21 +12,10 @@
 
 int main(void)
 {
-	int con;
+    int n = 98;
+    int *p = &n;
 
-	for (con = 1; con <= 100; con++)
-	{
-		if ((con % 3 == 0) && (con % 5 == 0))
-			printf("FizzBuzz ");
-		else if (con % 5 == 0)
-			printf("Buzz ");
-		else if (con % 3 == 0)
-			printf("Fizz ");
-		else
-			printf("%i ", con);
-	}
+    printf("%d", n);
 
-	printf("\n");
-
-	return (0);
+    return (0);
 }
