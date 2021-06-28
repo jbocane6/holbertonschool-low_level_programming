@@ -3,7 +3,7 @@
 #include "math.h"
 
 /**
- * print_number -  function that prints an integer
+ * print_number - function that prints an integer
  * @n: int value number
  * Return: 0
  */
