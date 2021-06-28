@@ -14,7 +14,7 @@ void puts2(char *str)
 {
 	int c, d;
 
-	for (c = 0; *str[c] != '\0'; c++)
+	for (c = 0; str[c] != '\0'; c++)
 		;
 
 	c--;
@@ -22,7 +22,7 @@ void puts2(char *str)
 
 	while (d < c)
 	{
-		_putchar(*str[d]);
+		_putchar(str[d]);
 		d + = 2;
 	}
 	_putchar('\n');
