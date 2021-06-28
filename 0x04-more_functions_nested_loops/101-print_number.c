@@ -19,7 +19,7 @@ void print_number(int n)
 			_putchar('-');
 			n = n * -1;
 		}
-		int cont, cont2;
+		int cont2;
 		int i = 1;
 		int len = 1;
 
