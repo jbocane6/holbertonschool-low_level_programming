@@ -10,6 +10,8 @@
 
 void print_number(int n)
 {
+	int cont2, i, len;
+
 	if (n == 0)
 		_putchar(n + '0');
 	else
@@ -19,9 +21,9 @@ void print_number(int n)
 			_putchar('-');
 			n = n * -1;
 		}
-		int cont2;
-		int i = 1;
-		int len = 1;
+
+		i = 1;
+		len = 1;
 
 		while (n / (i * 10) > 0)
 		{
