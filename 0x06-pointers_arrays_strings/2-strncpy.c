@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * _strncat - Main function
+ * _strncpy - Main function
  * Description: Function that copies a string.
  * @dest: Pointer to a char value
  * @src: Pointer to a char value
@@ -18,5 +18,6 @@ char *_strncpy(char *dest, char *src, int n)
 
 	for (; i < n; i++)
 		dest[i] = '\0';
+
 	return (dest);
 }
