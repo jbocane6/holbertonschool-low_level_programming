@@ -9,7 +9,9 @@
 
 void reverse_array(int *a, int n)
 {
-	int cont = 0, swap, m = n - 1;
+	int cont = 0;
+	int swap;
+	int m = n - 1;
 
 	while (cont <= (n / 2))
 	{
