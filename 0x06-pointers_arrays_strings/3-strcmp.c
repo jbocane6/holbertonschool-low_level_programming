@@ -3,8 +3,8 @@
 /**
  * _strcmp - Main function
  * Description: Function that compares two strings.
- * @dest: Pointer to a char value
- * @src: Pointer to a char value
+ * @s1: Pointer to a char value
+ * @s2: Pointer to a char value
  *
  * Return: String.
  */
