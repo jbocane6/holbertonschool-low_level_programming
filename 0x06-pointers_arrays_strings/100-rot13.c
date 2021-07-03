@@ -1,5 +1,4 @@
 #include "holberton.h"
-#include <stddef.h>
 
 /**
  * rot13 - Main function
@@ -13,9 +12,6 @@ char *rot13(char *str)
 	int cont, cont2;
 	char cadena1[] = {"ABCDEFGHIJKLMabcdefghijklm"};
 	char cadena2[] = {"NOPQRSTUVWXYZnopqrstuvwxyz"};
-
-	if (str == NULL)
-		return (NULL);
 
 	for (cont = 0; str[cont] != '\0'; cont++)
 	{
