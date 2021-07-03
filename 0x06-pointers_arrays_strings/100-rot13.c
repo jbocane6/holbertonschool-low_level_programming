@@ -13,9 +13,6 @@ char *rot13(char *str)
 	char cadena1[] = {"ABCDEFGHIJKLMabcdefghijklm"};
 	char cadena2[] = {"NOPQRSTUVWXYZnopqrstuvwxyz"};
 
-	if (str == 0)
-		return (0);
-
 	for (cont = 0; str[cont] != '\0'; cont++)
 	{
 		for (cont2 = 0; cadena1[cont2]; cont2++)
