@@ -13,9 +13,6 @@ char *leet(char *str)
 	char cadena1[] = {"aAeEoOtTlL"};
 	char cadena2[] = {"4433007711"};
 
-	if (str == 0)
-		return (0);
-
 	for (cont = 0; str[cont] != '\0'; cont++)
 	{
 		for (cont2 = 0; cadena1[cont2]; cont2++)
