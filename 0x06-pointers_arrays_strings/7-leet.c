@@ -10,8 +10,8 @@
 char *leet(char *str)
 {
 	int cont, cont2;
-	char cadena1[10] = {'a','A','e','E','o','O','t','T','l','L'};
-	char cadena2[10] = {'4','4','3','3','0','0','7','7','1','1'};
+	char cadena1[] = {"aAeEoOtTlL"};
+	char cadena2[] = {"4433007711"};
 
 	if (str == 0)
 		return (0);
