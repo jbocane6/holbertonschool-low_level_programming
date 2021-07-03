@@ -9,32 +9,21 @@
 
 char *leet(char *str)
 {
-	int cont;
+	int cont, cont2;
+	char cadena1[10] = {'a','A','e','E','o','O','t','T','l','L'};
+	char cadena2[10] = {'4','4','3','3','0','0','7','7','1','1'};
 
 	if (str == 0)
 		return (0);
 
 	for (cont = 0; str[cont] != '\0'; cont++)
 	{
-		if (str[cont] == 'a' || str[cont] == 'A')
+		for (cont2 = 0; cadena1[cont2]; cont2++)
 		{
-			str[cont] = '4';
-		}
-		else if (str[cont] == 'e' || str[cont] == 'E')
-		{
-			str[cont] = '3';
-		}
-		else if (str[cont] == 'o' || str[cont] == 'O')
-		{
-			str[cont] = '0';
-		}
-		else if (str[cont] == 't' || str[cont] == 'T')
-		{
-			str[cont] = '7';
-		}
-		else if (str[cont] == 'i' || str[cont] == 'I')
-		{
-			str[cont] = '1';
+			if (cadena1[cont2] == str[cont])
+			{
+				str[cont] = cadena2[cont2];
+			}
 		}
 	}
 	return (str);
