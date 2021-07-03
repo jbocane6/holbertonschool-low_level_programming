@@ -10,8 +10,10 @@
 char *rot13(char *str)
 {
 	int cont, cont2;
-	char cadena1[] = {"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"};
-	char cadena2[] = {"NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm"};
+	char cadena1[] = {"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghi
+jklmnopqrstuvwxyz"};
+	char cadena2[] = {"NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuv
+wxyzabcdefghijklm"};
 
 	for (cont = 0; str[cont] != '\0'; cont++)
 	{
