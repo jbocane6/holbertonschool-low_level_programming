@@ -13,6 +13,9 @@ char *_strstr(char *haystack, char *needle)
 {
 	int i, j, k, l;
 
+	if (haystack == NULL || needle == NULL)
+		return (NULL);
+
 	for (i = 0; needle[i] != '\0'; i++)
 	{
 		for (j = 0; haystack[j] != '\0'; j++)
