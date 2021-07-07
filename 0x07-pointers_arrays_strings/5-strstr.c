@@ -13,7 +13,7 @@ char *_strstr(char *haystack, char *needle)
 {
 	int i = 0, j = 0, k, l;
 
-	if (needle == 0)
+	if (needle[0] == '\0')
 		return (haystack);
 
 	for (; haystack[i] != '\0'; i++)
