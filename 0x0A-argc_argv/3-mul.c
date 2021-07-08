@@ -3,10 +3,10 @@
 #include <stdlib.h>
 
 /**
- * main - print all arguments it receives.
+ * main - program that multiplies two numbers.
  * @argc: argument count
- * @argv: arguments passed to main as an array of int
- * Return: 0
+ * @argv: arguments passed to main as an array of char
+ * Return: 0, 1
  */
 
 int main(int argc, char *argv[])
@@ -14,7 +14,7 @@ int main(int argc, char *argv[])
 	int mult;
 	(void)argv;
 
-	if (argc < 2)
+	if (argc != 2)
 	{
 		printf("Error\n");
 		return (1);
