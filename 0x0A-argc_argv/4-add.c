@@ -15,7 +15,7 @@ int main(int argc, char *argv[])
 	int suma = 0, i;
 	(void)argv;
 
-	if (argc < 2)
+	if (argc < 1)
 		printf("%d\n", suma);
 	else
 	{
