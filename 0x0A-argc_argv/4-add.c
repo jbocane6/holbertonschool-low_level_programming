@@ -20,9 +20,9 @@ int main(int argc, char *argv[])
 	{
 		for (i = 1; i < argc; i++)
 		{
-			for (j = 1; argv[i][j] != '\n'; j++)
+			for (j = 1; argv[i][j]; j++)
 			{
-				if (!atoi(argv[i]))
+				if (atoi(argv[i]))
 				{
 					printf("Error\n");
 					return (1);
