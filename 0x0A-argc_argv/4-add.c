@@ -11,8 +11,7 @@
 
 int main(int argc, char *argv[])
 {
-	int i;
-	unsigned int suma = 0;
+	int suma = 0, i, j;
 	(void)argv;
 
 	if (argc < 2)
@@ -21,14 +20,17 @@ int main(int argc, char *argv[])
 	{
 		for (i = 1; i < argc; i++)
 		{
-			if (!atoi(argv[i]))
+			for (j = 1; argv[i][j] != '\n'; j++)
 			{
-				printf("Error\n");
-				return (1);
+				if (!atoi(argv[i]))
+				{
+					printf("Error\n");
+					return (1);
+				}
 			}
 			suma += atoi(argv[i]);
 		}
 		printf("%d\n", suma);
 	}
 	return (0);
-}
+} 
