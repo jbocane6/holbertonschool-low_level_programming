@@ -11,7 +11,8 @@
 
 int main(int argc, char *argv[])
 {
-	int suma = 0, i;
+	int i;
+	unsigned int suma = 0;
 	char a;
 	(void)argv;
 
@@ -22,7 +23,7 @@ int main(int argc, char *argv[])
 		for (i = 1; i < argc; i++)
 		{
 			a = *argv[i];
-			if ((a < '0'  || a > '9') && a != '-')
+			if (a < '0'  || a > '9')
 			{
 				printf("Error\n");
 				return (1);
