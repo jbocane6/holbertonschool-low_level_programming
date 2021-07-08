@@ -20,7 +20,7 @@ int main(int argc, char *argv[])
 	{
 		for (i = 1; i < argc; i++)
 		{
-			for (j = 1; argv[i][j]; j++)
+			for (j = 0; argv[i][j]; j++)
 			{
 				if (atoi(argv[i]))
 				{
