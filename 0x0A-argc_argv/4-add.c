@@ -1,5 +1,6 @@
 #include "holberton.h"
 #include <stdio.h>
+#include <ctype.h>
 #include <stdlib.h>
 
 /**
@@ -12,7 +13,6 @@
 int main(int argc, char *argv[])
 {
 	int suma = 0, i;
-	char a;
 	(void)argv;
 
 	if (argc < 2)
@@ -21,8 +21,7 @@ int main(int argc, char *argv[])
 	{
 		for (i = 1; i < argc; i++)
 		{
-			a = *argv[i];
-			if (a < '0'  || a > '9')
+			if (!isdigit(*argv[i]))
 			{
 				printf("Error\n");
 				return (1);
