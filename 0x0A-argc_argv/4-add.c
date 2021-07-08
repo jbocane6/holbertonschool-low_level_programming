@@ -1,6 +1,7 @@
 #include "holberton.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
 
 /**
  * main - program that adds positive numbers.
@@ -20,9 +21,9 @@ int main(int argc, char *argv[])
 	{
 		for (i = 1; i < argc; i++)
 		{
-			for (j = 0; argv[i][j]; j++)
+			for (j = 0; argv[i][j] != '\0'; j++)
 			{
-				if (atoi(argv[i]))
+				if (isdigit(argv[i][j]) == 0)
 				{
 					printf("Error\n");
 					return (1);
@@ -33,4 +34,4 @@ int main(int argc, char *argv[])
 		printf("%d\n", suma);
 	}
 	return (0);
-} 
+}
