@@ -11,7 +11,7 @@
 
 int main(int argc, char *argv[])
 {
-	int value, cont = 0;
+	int value, cont = 0, modulo;
 	(void)argv;
 
 	if (argc != 2)
@@ -24,30 +24,25 @@ int main(int argc, char *argv[])
 		printf("%d\n", 0);
 	else
 	{
-		while (value / 25 != 0 && value > 0)
-		{
-			cont += (value / 25);
-			value %= 25;
-		}
-		while (value / 10 != 0 && value > 0)
-		{
-			cont += (value / 10);
-			value %= 10;
-		}
-		while (value / 5 != 0 && value > 0)
-		{
-			cont += (value / 5);
-			value %= 5;
-		}
-		while (value / 2 != 0 && value > 0)
-		{
-			cont += (value / 2);
-			value %= 2;
-		}
 		while (value > 0)
 		{
-			cont++;
-			value--;
+			if (value / 25 != 0)
+				modulo = 25;
+			else if (value / 10 != 0)
+				modulo = 10;
+			else if (value / 5 != 0)
+				modulo = 5;
+			else if (value / 2 != 0)
+				modulo = 2;
+			else
+			{
+				cont += value;
+				value -= 0;
+				break;
+			}
+
+			cont += (value / modulo);
+			value %= modulo;
 		}
 		printf("%d\n", cont);
 	}
