@@ -27,6 +27,7 @@ int prime(int n, int x)
 int is_prime_number(int n)
 {
 	int x = 2;
+
 	if (n <= 1)
 		return (0);
 	return (prime(n, x));
