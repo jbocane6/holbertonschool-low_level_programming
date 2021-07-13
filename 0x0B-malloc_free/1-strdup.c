@@ -17,12 +17,10 @@ char *_strdup(char *str)
 		;
 	}
 
-	str--;
-
 	if (str == 0)
 		return (NULL);
 
-	cadena = malloc(size * sizeof(cadena));
+	cadena = malloc(size * sizeof(str[0]));
 
 	for (i = 0; i < size; i++)
 		cadena[i] = str[i];
