@@ -13,7 +13,10 @@ char *_strdup(char *str)
 	int size = 0, i;
 
 	for (size; str[size] != '\0'; size++)
+	{
 		;
+	}
+
 	str--;
 
 	if (str == 0)
@@ -24,5 +27,5 @@ char *_strdup(char *str)
 	for (i = 0; i < size; i++)
 		cadena[i] = str[i];
 
-	return (&cadena);
+	return (cadena);
 }
