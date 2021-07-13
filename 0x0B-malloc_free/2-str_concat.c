@@ -1,38 +1,51 @@
 #include "holberton.h"
 #include <stdlib.h>
-
 /**
- * str_concat - concatenates two strings.
- * @s1: inter to a string
- * @s2: inter to a string
- * Return: s1
+ * str_concat - concatenate two strings
+ * @s1: String one
+ * @s2: String two
+ * Return: Both strings
  */
-
 char *str_concat(char *s1, char *s2)
 {
-	int size1, size2, i, j = 0;
-	char *cadena;
+	int i, j, k;
+	int l = 0;
+	char *str;
 
-	for (size1 = 0; s1[size1] != '\0'; size1++)
+	if (s1 == NULL)
+		s1 = "";
+
+	if (s2 == NULL)
+		s2 = "";
+
+	for (i = 0; s1[i] != '\0'; i++)
 	{
 		;
 	}
 
-	for (size2 = 0; s2[size2] != '\0'; size2++)
+	for (j = 0; s2[j] != '\0'; j++)
 	{
 		;
 	}
 
-	cadena = malloc(((size1 + size2) * sizeof(s1[0])) + 1);
-	for (i = 0; i < size1; i++)
+	str = malloc(((i + j) * sizeof(s1[0])) + 1);
+
+	if (str == NULL)
+		return (NULL);
+
+	for (k = 0; k < i; k++)
 	{
-		cadena[1] = s1[1];
+		str[k] = s1[k];
 	}
-	while (j < size1 + size2)
+
+	while (k < i + j)
 	{
-		cadena[i] = s2[j];
-		i++;
-		j++;
+		str[k] = s2[l];
+		l++;
+		k++;
 	}
-	return (cadena);
+
+	str[k] = '\0';
+	return (str);
+	free(str);
 }
