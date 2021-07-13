@@ -10,9 +10,9 @@
 char *_strdup(char *str)
 {
 	char *cadena;
-	int size = 0, i;
+	int size, i;
 
-	for (size; str[size] != '\0'; size++)
+	for (size = 0; str[size] != '\0'; size++)
 	{
 		;
 	}
