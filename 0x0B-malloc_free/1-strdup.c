@@ -12,18 +12,18 @@ char *_strdup(char *str)
 	char *cadena;
 	int size, i;
 
-	for (size = 0; str[size] != '\0'; size++)
-	{
-		;
-	}
-
 	if (str == 0)
 		return (NULL);
 
 	if (str == NULL)
 		return (NULL);
 
-	cadena = malloc(size * sizeof(str[0]));
+	for (size = 0; str[size] != '\0'; size++)
+	{
+		;
+	}
+
+	cadena = malloc((size * sizeof(str[0])) + 1);
 
 	for (i = 0; i < size; i++)
 		cadena[i] = str[i];
