@@ -25,6 +25,9 @@ char *_strdup(char *str)
 
 	cadena = malloc((size * sizeof(str[0])) + 1);
 
+	if (cadena == NULL)
+		return (NULL);
+
 	for (i = 0; i < size; i++)
 		cadena[i] = str[i];
 
