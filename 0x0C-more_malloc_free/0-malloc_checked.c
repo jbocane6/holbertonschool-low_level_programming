@@ -9,11 +9,12 @@
 
 void *malloc_checked(unsigned int b)
 {
-	void *cadena;
+	void *str;
 
-	cadena = malloc(b);
-    
-	if (cadena == NULL)
+	str = malloc(b);
+
+	if (str == NULL)
 		exit(98);
-	return (cadena);
-}
+
+	return (str);
+|}
