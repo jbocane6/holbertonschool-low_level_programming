@@ -29,11 +29,11 @@ int _strlen(char *str)
 
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	dog_t *inner_dog;
+	struct dog *inner_dog;
 	int i, size_name, size_owner;
 	char *inner_name, *inner_owner;
 
-	inner_dog = malloc(sizeof(dog_t));
+	inner_dog = malloc(sizeof(struct dog));
 	if (inner_dog == NULL)
 		return (NULL);
 
