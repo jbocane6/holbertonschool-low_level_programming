@@ -61,9 +61,9 @@ dog_t *new_dog(char *name, float age, char *owner)
 	for (i = 0; i <= size_owner; i++)
 		inner_owner[i] = owner[i];
 
-	inner_dog->name = name;
+	inner_dog->name = inner_name;
 	inner_dog->age = age;
-	inner_dog->owner = owner;
+	inner_dog->owner = inner_owner;
 
 	return (inner_dog);
 }
