@@ -2,11 +2,7 @@
 [![N|logo](https://raw.githubusercontent.com/jbocane6/logos/main/milogo.png)](#)
 \
 \
-<<<<<<< HEAD
-![N|foto](https://raw.githubusercontent.com/jbocane6/logos/main/foto.png)(https://github.com/jbocane6)
-=======
-![N|foto](https://raw.githubusercontent.com/jbocane6/logos/main/foto.png)
->>>>>>> 0c2d48c947952ede0b747399af8231a7a17a013e
+[![N|foto](https://raw.githubusercontent.com/jbocane6/logos/main/foto.png)](https://github.com/jbocane6)
 [![N|Linkedin](https://raw.githubusercontent.com/jbocane6/logos/main/linkedin.png)](https://www.linkedin.com/in/juan-camilo-bocanegra-osorio-18b1821a6/)
 [![N|Twitter](https://raw.githubusercontent.com/jbocane6/logos/main/twitter.png)](https://twitter.com/Juanoso07555284)
 
