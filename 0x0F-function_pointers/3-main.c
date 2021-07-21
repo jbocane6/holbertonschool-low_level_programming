@@ -25,7 +25,7 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(99);
 	}
-	
+
 	a = atoi(argv[1]);
 	b = atoi(argv[3]);
 
@@ -33,7 +33,7 @@ int main(int argc, char *argv[])
 
 	if (result == NULL)
 	{
-		printf("%s\n", "Errors");
+		printf("%s\n", "Error");
 		exit(99);
 	}
 
