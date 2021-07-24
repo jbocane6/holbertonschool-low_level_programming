@@ -17,7 +17,7 @@ void print_char(va_list list)
 */
 void print_int(va_list list)
 {
-	printf("%i", va_arg(list, int));
+	printf("%d", va_arg(list, int));
 }
 
 /**
@@ -39,7 +39,7 @@ void print_string(va_list list)
 {
 	char *str;
 
-	if (va_arg(list, char *) == NULL)
+	if (va_arg(list, char * == NULL)
 		str = "(nil)";
 	printf("%s", str);
 }
