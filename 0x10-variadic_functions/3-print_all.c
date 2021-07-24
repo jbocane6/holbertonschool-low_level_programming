@@ -17,7 +17,7 @@ void print_char(va_list list)
 */
 void print_int(va_list list)
 {
-	printf("%d", va_arg(list, int));
+	printf("%i", va_arg(list, int));
 }
 
 /**
@@ -80,7 +80,7 @@ void print_all(const char * const format, ...)
 			if (print_f[j].type[0] == format[i])
 			{
 				printf("%s", separator);
-				(*print_f[i].proto)(list);
+				print_f[j].proto(list);
 				separator = ", ";
 				break;
 			}
