@@ -39,7 +39,7 @@ void print_string(va_list list)
 {
 	char *str;
 
-	if (va_arg(list, char * == NULL)
+	if (va_arg(list, char *) == NULL)
 		str = "(nil)";
 	printf("%s", str);
 }
