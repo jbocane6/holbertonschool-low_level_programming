@@ -9,9 +9,15 @@
 
 char *rot13(char *str)
 {
-	int cont, cont2;
-	char cadena1[] = {"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"};
-	char cadena2[] = {"NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm"};
+	char *rts;
+	int cont, cont2, len = strlen(str);
+	
+	rts = malloc(sizeof(char) * len);
+	if (rts == NULL)
+		return;
+	
+	char cadena1[] = {"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz !_-,;?"};
+	char cadena2[] = {"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz !_-,;?"};
 
 	for (cont = 0; str[cont]; cont++)
 	{
@@ -19,9 +25,11 @@ char *rot13(char *str)
 		{
 			if (cadena1[cont2] == str[cont])
 			{
-				str[cont] = cadena2[cont2];
+				rts[cont] = cadena2[cont2];
+				break;
 			}
 		}
 	}
-	return (str);
+	return (rts);
+	free(rts);
 }
