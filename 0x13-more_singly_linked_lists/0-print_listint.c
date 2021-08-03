@@ -11,6 +11,8 @@ size_t print_listint(const listint_t *h)
 	size_t i;
 	char c;
 
+	if (h == NULL)
+		return (0);
 	for (i = 0; h != NULL; i++)
 	{
 		c = h->n + '0';
