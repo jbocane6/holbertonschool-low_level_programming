@@ -9,7 +9,7 @@
 unsigned int binary_to_uint(const char *b)
 {
 	unsigned int size = strlen(b);
-	unsigned int counter, exp = 1, sum = 0, i;
+	unsigned int counter, exp, sum = 0, i;
 
 	if (b == NULL)
 		return (0);
@@ -23,13 +23,10 @@ unsigned int binary_to_uint(const char *b)
 		for (i = 0; i < counter; i++)
 		{
 			if (counter == 0)
-			{
-				exp = 1;
 				break;
-			}
 			exp = 2 * exp;
 		}
-		sum = sum + (exp * (int)(b[size - 1 -  counter] - '0'));
+		sum = sum + (exp * (b[size - 1 -  counter] - '0'));
 	}
 	return (sum);
 }
