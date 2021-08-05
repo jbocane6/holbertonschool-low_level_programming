@@ -2,7 +2,7 @@
 
 /**
  * binary_to_uint - convert to decimal
- * @d: string with binary
+ * @b: string with binary
  * Return: decimal or 0
 */
 
