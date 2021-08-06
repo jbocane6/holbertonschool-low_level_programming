@@ -8,25 +8,23 @@
 
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int size = strlen(b);
-	unsigned int counter, exp, sum = 0, i;
+	unsigned int a = 0;
+	int i = 0;
 
-	if (b == NULL || size == 0)
+	if (!b)
 		return (0);
-
-	for (counter = 0; counter < size; counter++)
+	while (b[i])
 	{
-		if (b[counter] != '0' && b[counter] != '1')
-			return (0);
-
-		exp = 1;
-		for (i = 0; i < counter; i++)
+		if (b[i] == '1')
 		{
-			if (counter == 0)
-				break;
-			exp = 2 * exp;
+			a = a << 1;
+			a = a | 1;
 		}
-		sum = sum + (exp * (b[size - 1 -  counter] - '0'));
+		else if (b[i] == '0')
+			a = a << 1;
+		else
+			return (0);
+		i++;
 	}
-	return (sum);
+	return (a);
 }
