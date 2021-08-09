@@ -25,7 +25,7 @@ int main(int argc, char *argv[])
 	if (ff == -1)
 		dprintf(err, "Error: Can't read from file %s\n", argv[1]), exit(98);
 
-	ft = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC);
+	ft = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 	if (ft == -1)
 		dprintf(err, "Error: Can't write to %s\n", argv[2]), exit(99);
 
@@ -54,6 +54,5 @@ int main(int argc, char *argv[])
 	w = close(ft);
 	if (w == -1)
 		dprintf(err, "Error: Can't close fd %d\n", ft), exit(100);
-
 	return (0);
 }
