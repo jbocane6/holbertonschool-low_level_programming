@@ -15,7 +15,7 @@
 
 int main(int argc, char *argv[])
 {
-	int ff, ft, r = 1, w = 1;
+	int ff, ft, r = 1, w;
 	char str[1024];
 
 	if (argc != 3)
@@ -37,12 +37,14 @@ int main(int argc, char *argv[])
 			dprintf(err, "Error: Can't read from file %s\n", argv[1]);
 			exit(98);
 		}
-
-		w = write(ft, str, r);
-		if (w == -1)
+		if (r > 0)
 		{
-			dprintf(err, "Error: Can't write to %s\n", argv[2]);
-			exit(99);
+			w = write(ft, str, r);
+			if (w == -1)
+			{
+				dprintf(err, "Error: Can't write to %s\n", argv[2]);
+				exit(99);
+			}
 		}
 	}
 
