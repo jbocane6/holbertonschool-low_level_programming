@@ -1,4 +1,6 @@
 #include "holberton.h"
+#include <stdio.h>
+#include <stdlib.h>
 
 /**
  * main - Entry point that prints the first 98 Fibonacci numbers
@@ -43,6 +45,6 @@ int main(void)
 		if (i < 97)
 			printf(", ");
 	}
-	putchar('\n');
+	printf("\n");
 	return (0);
 }
