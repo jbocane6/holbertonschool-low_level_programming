@@ -11,7 +11,7 @@
 void print_number(int n)
 {
 	int cont2, i, len;
-	unsigned int m;
+	unsigned int m = 0;
 
 	if (n == 0)
 		_putchar(n + '0');
@@ -20,7 +20,7 @@ void print_number(int n)
 		if (n < 0)
 		{
 			_putchar('-');
-			m = n * -1;
+			m = -n;
 		}
 		else
 		{
