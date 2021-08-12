@@ -1,6 +1,21 @@
 #include "holberton.h"
 #include <string.h>
 #include <stdlib.h>
+
+/**
+ * special - encodes special chars
+ * @str: Pointer to a char value
+ * @rts: Pointer to a char value
+ * @token: int value
+ * @cont: index of strings
+ */
+
+void special(char *str, char *rts, int token, int cont)
+{
+	if (token == 0)
+		rts[cont] = str[cont];
+}
+
 /**
  * rot13 - Main function
  * Description: function that encodes a string using rot13.
@@ -32,8 +47,7 @@ char *rot13(char *str)
 					break;
 				}
 			}
-			if (token == 0)
-				rts[cont] = str[cont];
+			special(str, rts, token, cont);
 		}
 	}
 	str = rts;
