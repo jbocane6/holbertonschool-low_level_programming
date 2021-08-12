@@ -20,7 +20,7 @@ int main(void)
 		if (temp == 0)
 		{
 			fin = con;
-			printf("%li \n", fin);
+			printf("%li", fin);
 			break;
 		}
 	}
