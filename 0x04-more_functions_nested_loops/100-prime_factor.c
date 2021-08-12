@@ -4,22 +4,25 @@
 /**
  * main - main function
  * Description: Find and print the largest prime factor of the number
- * 612852475143
+ * 612852475143 (50829599)
  * Return: 0
  */
 
 int main(void)
 {
-	float limit = 612852475143;
-	int raiz = (int)floor(sqrt(limit));
-	int con, temp, fin;
+	long int limit = 612852475143;
+	long int raiz = (sqrt(limit));
+	long int con, temp, fin;
 
-	for (con = 2; con <= raiz - 1; con++)
+	for (con = raiz; con > 0; con++)
 	{
-		temp = raiz % con;
+		temp = limit % con;
 		if (temp == 0)
+		{
 			fin = con;
-		printf("%i \n", fin);
+			printf("%li \n", fin);
+			break;
+		}
 	}
 	return (0);
 }
