@@ -1,20 +1,4 @@
 #include "holberton.h"
-#include <string.h>
-#include <stdlib.h>
-
-/**
- * special - encodes special chars
- * @str: Pointer to a char value
- * @rts: Pointer to a char value
- * @token: int value
- * @cont: index of strings
- */
-
-void special(char *str, char *rts, int token, int cont)
-{
-	if (token == 0)
-		rts[cont] = str[cont];
-}
 
 /**
  * rot13 - Main function
@@ -25,32 +9,22 @@ void special(char *str, char *rts, int token, int cont)
 
 char *rot13(char *str)
 {
-	char *rts;
-	int cont, cont2, len = strlen(str), token;
+	int i, j;
 
-	rts = malloc(sizeof(char) * len);
-	if (rts != NULL)
+	char cad1[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	char cad2[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
+
+	for (i = 0; str[i] != '\0'; i++)
 	{
-		char cadena1[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-		char cadena2[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
-
-		for (cont = 0; str[cont]; cont++)
+		for (j = 0; cad1[j] != '\0'; j++)
 		{
-			token = 0;
-
-			for (cont2 = 0; cadena1[cont2]; cont2++)
+			if (str[i] == cad1[j])
 			{
-				if (cadena1[cont2] == str[cont])
-				{
-					rts[cont] = cadena2[cont2];
-					token = 1;
-					break;
-				}
+				str[i] = cad2[j];
+				break;
 			}
-			special(str, rts, token, cont);
 		}
 	}
-	str = rts;
-	free(rts);
+
 	return (str);
 }
