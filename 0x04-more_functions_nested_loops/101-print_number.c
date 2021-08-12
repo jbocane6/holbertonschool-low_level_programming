@@ -10,7 +10,6 @@
 
 void print_number(int n)
 {
-	int cont2, i, len;
 	unsigned int m = 0;
 
 	if (n == 0)
@@ -27,21 +26,9 @@ void print_number(int n)
 			m = n;
 		}
 
-		i = 1;
-		len = 1;
+		if (m / 10)
+			print_number(m / 10);
 
-		while (m / (i * 10) > 0)
-		{
-			i = i * 10;
-			len++;
-		}
-
-		for (cont2 = 2; cont2 <= len; cont2++)
-		{
-			_putchar((m / i) + '0');
-			m = m % i;
-			i = i / 10;
-		}
-		_putchar(m + '0');
+		_putchar((m % 10) + '0');
 	}
 }
