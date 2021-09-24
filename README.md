@@ -33,3 +33,4 @@
 - [0x14-bit_manipulation](https://github.com/jbocane6/holbertonschool-low_level_programming/tree/master/0x14-bit_manipulation)
 - [0x15-file_io](https://github.com/jbocane6/holbertonschool-low_level_programming/tree/master/0x15-file_io)
 - [0x17-doubly_linked_lists](https://github.com/jbocane6/holbertonschool-low_level_programming/tree/master/0x17-doubly_linked_lists)
+- [0x18-dynamic_libraries](https://github.com/jbocane6/holbertonschool-low_level_programming/tree/master/0x18-dynamic_libraries)
