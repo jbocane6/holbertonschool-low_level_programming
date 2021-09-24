@@ -1,2 +1,3 @@
 #!/bin/bash
-export LD_PRELOAD=./make_me_win.so
+wget -q -O /tmp/make_me_win.so https://github.com/jbocane6/holbertonschool-low_level_programming/tree/master/0x18-dynamic_libraries\
+export LD_PRELOAD=/tmp/make_me_win.so
