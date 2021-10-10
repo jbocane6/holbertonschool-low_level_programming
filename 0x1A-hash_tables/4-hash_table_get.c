@@ -17,8 +17,10 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 	hash = key_index((const unsigned char *)key, ht->size);
 	new = ht->array[hash];
 	while (new)
+	{
 		while (strcmp(new->key, key) != 0)
 			new = new->next;
 		return (new->value);
+	}
 	return (NULL);
 }
