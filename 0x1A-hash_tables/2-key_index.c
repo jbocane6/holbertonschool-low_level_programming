@@ -10,7 +10,7 @@
 
 unsigned long int key_index(const unsigned char *key, unsigned long int size)
 {
-    if (!key)
-        return (NULL);
-    return (NULL);
+	if (!key)
+		return (NULL);
+	return (NULL);
 }
