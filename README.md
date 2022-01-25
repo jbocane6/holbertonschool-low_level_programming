@@ -36,3 +36,4 @@
 - [0x18-dynamic_libraries](https://github.com/jbocane6/holbertonschool-low_level_programming/tree/master/0x18-dynamic_libraries)
 - [0x1A-hash_tables](https://github.com/jbocane6/holbertonschool-low_level_programming/tree/master/0x1A-hash_tables)
 - [0x1C-makefiles](https://github.com/jbocane6/holbertonschool-low_level_programming/tree/master/0x1C-makefiles)
+- [0x1E-search_algorithms](https://github.com/jbocane6/holbertonschool-low_level_programming/tree/master/0x1E-search_algorithms)
